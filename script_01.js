@@ -28,11 +28,10 @@ function multiplizieren(a,b) {
 /** Division a / b **/ 
 ausgabe (dividieren(1,0)); //<---- Test
 function dividieren(a,b) {
-    if (b==0) { // wenn b==0 dann Fehlermeldung
-        return "Dividieren durch 0 nicht möglich!";
-    } else {
-        return a / b;
-    }
+    if (b!=0) { // wenn b==0 dann Fehlermeldung
+        return a / b;    
+    } 
+    return "Dividieren durch 0 nicht möglich!";
 
 }
 
