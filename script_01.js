@@ -8,3 +8,35 @@
 4. Ausgabe in Konsole :: 
 */
 
+
+/***** Grundrechenarten *****/ 
+/** Addition a + b **/ 
+// ausgabe (addieren(1,1)); //<---- Test
+function addieren(a,b) {
+    return a + b;
+}
+
+/** Subtraktion a - b **/ 
+// ausgabe (subtrahieren(1,1)); //<---- Test
+function subtrahieren(a,b) {
+    return a - b;
+}
+
+/** Multiplikation a * b **/ 
+// ausgabe (multiplizieren(1,1)); //<---- Test
+function multiplizieren(a,b) {
+    return a * b;
+}
+
+/** Division a / b **/ 
+// ausgabe (dividieren(1,1)); //<---- Test
+function dividieren(a,b) {
+    return a / b;
+}
+
+
+/***** Ausgabe *****/ 
+// ausgabe("Hallo Welt") //<---- Test
+function ausgabe (outputStr) {
+    console.log(outputStr);
+}
