@@ -3,20 +3,45 @@
 /*
 0. a+b / a-b/ a*b / a/b  // ergebnis c
 1. Dateneingabe + -überprüfung :: 
-2. Auswahl Rechenart :: 
+2. Auswahl Rechenart :: erledigt
 3. Fkt. Grundrechenarten :: erledigt
 4. Ausgabe in Konsole :: erledigt
 */
 
 
+/***** Dateneingabe mit Überprüfung *****/ 
+/** Tests **/
+// ausgabe(rechner(getOp(),10,4)); // <-- test ganzer Rechner
+ausgabe(getOp()); // <-- test getOp
+
+// get Operator
+function getOp() {
+    let op = prompt("Bitte Rechenoperator eingeben")
+    if (isOpValid(op)) {
+        return true;
+    } else {
+        return "Bitte nochmal!"
+    }
+    return op;
+}
+
+// Operator Check
+function isOpValid(checkString) {
+    return false;
+}
+
+
+
+
+
 /***** Auswahl der Rechenart *****/ 
-//** Tests **/
+/** Tests **/
 // ausgabe (rechner("+",2,1));
 // ausgabe (rechner("-",2,1));
-//ausgabe (rechner("*",2,1));
+// ausgabe (rechner("*",2,1));
 // ausgabe (rechner("/",2,1));
 // ausgabe (rechner("/",2,0)); // <-- geteilt durch 0
-//ausgabe (rechner("9",2,0)); // <-- ungültiger Operator
+// ausgabe (rechner("9",2,0)); // <-- ungültiger Operator
 // ausgabe (rechner("+",1)); // <-- Parameter fehlen
 function rechner (op,a,b) {    
     switch (op) {
