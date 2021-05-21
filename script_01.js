@@ -15,25 +15,26 @@
 function addieren(a,b) {
     return a + b;
 }
-
 /** Subtraktion a - b **/ 
 // ausgabe (subtrahieren(1,1)); //<---- Test
 function subtrahieren(a,b) {
     return a - b;
 }
-
 /** Multiplikation a * b **/ 
 // ausgabe (multiplizieren(1,1)); //<---- Test
 function multiplizieren(a,b) {
     return a * b;
 }
-
 /** Division a / b **/ 
-// ausgabe (dividieren(1,1)); //<---- Test
+ausgabe (dividieren(1,0)); //<---- Test
 function dividieren(a,b) {
-    return a / b;
-}
+    if (b==0) { // wenn b==0 dann Fehlermeldung
+        return "Dividieren durch 0 nicht möglich!";
+    } else {
+        return a / b;
+    }
 
+}
 
 /***** Ausgabe *****/ 
 // ausgabe("Hallo Welt") //<---- Test
